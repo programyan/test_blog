@@ -1,0 +1,39 @@
+{
+  "resource": "API - Posts",
+  "resource_explanation": null,
+  "http_method": "GET",
+  "route": "/posts/top",
+  "description": "Top N",
+  "explanation": null,
+  "parameters": [
+    {
+      "name": "limit",
+      "description": "Количество первых запросов"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/posts/top?limit=3",
+      "request_body": null,
+      "request_headers": {
+        "Accept": "application/json",
+        "Content-Type": "application/json"
+      },
+      "request_query_parameters": {
+        "limit": "3"
+      },
+      "request_content_type": "application/json",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\"posts\":[{\"title\":\"veniam\",\"body\":\"Atque quo quia facere.\"},{\"title\":\"tempore\",\"body\":\"Et voluptatum quaerat maxime.\"},{\"title\":\"non\",\"body\":\"Totam rerum mollitia unde.\"}]}",
+      "response_headers": {
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

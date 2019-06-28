@@ -1,0 +1,50 @@
+{
+  "resource": "API - Posts",
+  "resource_explanation": null,
+  "http_method": "POST",
+  "route": "/posts",
+  "description": "Create",
+  "explanation": null,
+  "parameters": [
+    {
+      "name": "title",
+      "description": "Заголовок"
+    },
+    {
+      "name": "body",
+      "description": "Текст сообщения"
+    },
+    {
+      "name": "login",
+      "description": "Логин автора сообщений"
+    },
+    {
+      "name": "ip",
+      "description": "IP адрес, с которого было отправлено сообщение"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "POST",
+      "request_path": "/posts",
+      "request_body": "{\"title\":\"numquam\",\"body\":\"Dolorem laudantium et est.\",\"login\":\"eddy.hammes\",\"ip\":\"210.61.141.29\"}",
+      "request_headers": {
+        "Accept": "application/json",
+        "Content-Type": "application/json"
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/json",
+      "response_status": 201,
+      "response_status_text": "Created",
+      "response_body": "{\"id\":1,\"title\":\"numquam\",\"body\":\"Dolorem laudantium et est.\"}",
+      "response_headers": {
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

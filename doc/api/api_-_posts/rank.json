@@ -1,0 +1,42 @@
+{
+  "resource": "API - Posts",
+  "resource_explanation": null,
+  "http_method": "POST",
+  "route": "/posts/:id/rank",
+  "description": "Rank",
+  "explanation": null,
+  "parameters": [
+    {
+      "name": "id",
+      "description": "ID поста"
+    },
+    {
+      "name": "rank",
+      "description": "Оценка"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "POST",
+      "request_path": "/posts/1/rank",
+      "request_body": "{\"rank\":3}",
+      "request_headers": {
+        "Accept": "application/json",
+        "Content-Type": "application/json"
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/json",
+      "response_status": 201,
+      "response_status_text": "Created",
+      "response_body": "{\"avg_rank\":\"3.0\"}",
+      "response_headers": {
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

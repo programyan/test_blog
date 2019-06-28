@@ -1,0 +1,38 @@
+{
+  "resources": [
+    {
+      "name": "API - Posts",
+      "explanation": null,
+      "examples": [
+        {
+          "description": "Create",
+          "link": "api_-_posts/create.json",
+          "groups": "all",
+          "route": "/posts",
+          "method": "post"
+        },
+        {
+          "description": "Rank",
+          "link": "api_-_posts/rank.json",
+          "groups": "all",
+          "route": "/posts/:id/rank",
+          "method": "post"
+        },
+        {
+          "description": "Shared IP addreses",
+          "link": "api_-_posts/shared_ip_addreses.json",
+          "groups": "all",
+          "route": "/network_addresses/shared",
+          "method": "get"
+        },
+        {
+          "description": "Top N",
+          "link": "api_-_posts/top_n.json",
+          "groups": "all",
+          "route": "/posts/top",
+          "method": "get"
+        }
+      ]
+    }
+  ]
+}

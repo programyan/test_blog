@@ -1,0 +1,35 @@
+{
+  "resource": "API - Posts",
+  "resource_explanation": null,
+  "http_method": "GET",
+  "route": "/network_addresses/shared",
+  "description": "Shared IP addreses",
+  "explanation": null,
+  "parameters": [
+
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/network_addresses/shared",
+      "request_body": null,
+      "request_headers": {
+        "Accept": "application/json",
+        "Content-Type": "application/json"
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/json",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\"list\":[{\"ip\":\"215.43.118.22\",\"logins\":[\"carlton_goldner\",\"danny.grimes\",\"emile.bailey\",\"saundra.gibson\"]},{\"ip\":\"26.93.137.151\",\"logins\":[\"calvin\",\"eneida\"]}]}",
+      "response_headers": {
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

@@ -7,7 +7,9 @@ ruby '2.6.3'
 gem 'rails', '~> 5.2.3'
 gem 'reform', '>= 2.2.0'
 gem 'reform-rails'
-gem 'trailblazer', '>= 2.0.4'
+gem 'trailblazer', '1.1.2'
+gem 'trailblazer-rails', '0.4.0'
+
 # Use postgresql as the database for Active Record
 gem 'pg', '>= 0.18', '< 2.0'
 # Use Puma as the app server
@@ -25,6 +27,12 @@ gem 'puma', '~> 3.11'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+gem 'ipaddress'
+gem 'multi_json'
+gem 'rails_ip_validator'
+gem 'responders'
+gem 'sidekiq'
+
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
@@ -35,15 +43,18 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'apitome'
 
 group :development, :test do
+  gem 'awesome_print'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'guard', require: false
   gem 'guard-bundler', require: false
   gem 'guard-rspec', require: false
+  gem 'faker'
   gem 'rspec_api_documentation'
 end
 
 group :development do
+  gem 'foreman', require: false
   gem 'listen', '>= 3.0.5', '< 3.2'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
@@ -51,8 +62,8 @@ group :development do
 end
 
 group :test do
+  gem 'database_cleaner'
   gem 'factory_bot_rails'
-  gem 'faker'
   gem 'rspec-rails'
 end
 
